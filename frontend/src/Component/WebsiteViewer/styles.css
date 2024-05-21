@@ -1,0 +1,64 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.website-container {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.card {
+  width: 300px; /* Adjust the width to be more card-like */
+  padding: 20px;
+  margin: 20px; /* Add margin for spacing between cards */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Softer border radius */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+  text-align: center; /* Center the text inside the card */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift the card slightly on hover */
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card a:hover::before {
+  content: 'Visit Website';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1;
+}

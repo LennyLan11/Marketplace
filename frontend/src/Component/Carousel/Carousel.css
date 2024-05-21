@@ -1,0 +1,13 @@
+/* Carousel.css */
+.image {
+  max-width: 1200px
+}
+
+.slider {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+}
